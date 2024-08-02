@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Member Query</comment>
+	<entry key="selectMemberList">
+		SELECT * FROM MEMBER
+	</entry>
+	<entry key="insertMember">
+		INSERT INTO MEMBER
+			VALUES (SEQ_USERNO.NEXTVAL, 
+						?, 
+						?, 
+						?, 
+						?, 
+						?, 
+						?, 
+						?, 
+						?, 
+						?, 
+						SYSDATE)
+	</entry>
+	<entry key="delectMember">
+		DELETE FROM MEMBER WHERE USERID = ?
+		/*
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userId);
+			
+			result = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("오류발생!! MemberDao 파일을 열어봐라!");
+		} finally {
+			JDBCTemplate.close(pstmt);
+		}
+		return result;
+	}
+		*/
+		
+	</entry>
+	<entry key="updateMember">
+		UPDATE MEMBER 
+			SET USERPW = ?, 
+			USERNAME = ?,
+			ADDRESS = ?,
+			PHONE = ?,
+			HOBBY = ?
+			WHERE USERID = ?
+	</entry>
+</properties>

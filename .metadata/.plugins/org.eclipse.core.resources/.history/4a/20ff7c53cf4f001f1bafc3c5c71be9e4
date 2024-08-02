@@ -1,0 +1,30 @@
+package test;
+
+import java.util.Properties;
+
+public class TestRun {
+	/*
+	 * Properties 특징
+	 * - Map 계열의 컬렉션 => key:value 형태로 데이터 저장
+	 * - 문자열 (String) 형태로 데이터를 저장
+	 * 
+	 * - 값을 저장할 때 : setProperty(key, value)
+	 * - 값을 꺼내올 때 : getProperty(key)
+	 * 
+	 * - 저장되는 파일 종류 : .properties / .xml
+	 * 
+	 */
+	
+	public static void main(String[] args) {
+		// Properties 객체 생성
+		Properties prop = new Properties();
+		
+		// 데이터 저장하기
+		prop.setProperty("C", "INSERT");		// Create : 데이터 추가
+		prop.setProperty("R", "SELECT");		// Read   : 데이터 조회
+		prop.setProperty("U", "UPDATE");		// Update : 데이터 수정
+		prop.setProperty("D", "DELETE");		// Delete : 데이터 삭제
+		
+	} 
+	
+}

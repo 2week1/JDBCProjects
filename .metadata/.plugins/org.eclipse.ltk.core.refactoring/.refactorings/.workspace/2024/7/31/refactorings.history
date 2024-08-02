@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JDBC_01_PreparedStatement&apos; to &apos;JDBC_02_PreparedStatement&apos;" description="Rename resource &apos;JDBC_01_PreparedStatement&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/JDBC_01_PreparedStatement" name="JDBC_02_PreparedStatement" stamp="1722389596980" updateReferences="true"/>
+</session>
